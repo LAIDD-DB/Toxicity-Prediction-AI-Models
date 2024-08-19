@@ -15,7 +15,7 @@ If delimiter is not ',', it should be specifically inputted to 'sep' in pd.read_
 
 # CSV 파일을 읽어 데이터프레임(df)으로 로드합니다.
 # '../CHEMBL240_Toxicity_Data.csv' 파일을 ';' 구분자로 읽어들입니다.
-df = pd.read_csv('../CHEMBL240_Toxicity_Data.csv', sep=';')
+df = pd.read_csv('CHEMBL240_Toxicity_Data.csv', sep=';')
 
 #In order to check if the data is correctly loaded.
 print ('how to use head:', df.head())
