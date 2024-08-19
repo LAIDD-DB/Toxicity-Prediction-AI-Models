@@ -15,7 +15,7 @@ def isfloat(num):
     except ValueError:
         return False
 
-sdf_files = Chem.SDMolSupplier('BindingDB_herg_ic50.sdf')
+sdf_files = Chem.SDMolSupplier('../BindingDB_herg_ic50.sdf')
 mols = [mol for mol in sdf_files]
 
 print (mols[0].GetPropsAsDict())
