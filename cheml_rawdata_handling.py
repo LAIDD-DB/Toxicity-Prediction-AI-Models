@@ -7,19 +7,15 @@ Created on Wed Aug 24 15:14:56 2022
 import os
 import pandas as pd
 
-#wdir is short for workding directory.
-wdir = r'/directory/of/your/work'
-csv = 'DOWNLOAD-n0i9yh99WaQDBaNwN8GG-_4iqK6LwkZOMsWMMKaj2BI=.csv'
-
 """
 Error occured since pd.read_csv assumes that csv file is separated by ','.
 If delimiter is not ',', it should be specifically inputted to 'sep' in pd.read_csv
 """
 #df = pd.read_csv(os.path.join(wdir, csv))
 
-df = pd.read_csv(os.path.join(wdir, csv), sep=';')
-print ('Initial data size:', df.shape)
-print ('*'*40)
+# CSV 파일을 읽어 데이터프레임(df)으로 로드합니다.
+# '../CHEMBL240_Toxicity_Data.csv' 파일을 ';' 구분자로 읽어들입니다.
+df = pd.read_csv('../CHEMBL240_Toxicity_Data.csv', sep=';')
 
 #In order to check if the data is correctly loaded.
 print ('how to use head:', df.head())
