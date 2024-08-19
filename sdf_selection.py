@@ -20,7 +20,7 @@ import io
 import pandas as pd
 from rdkit import Chem
 
-sdf_files = Chem.SDMolSupplier('../BindingDB_herg_ic50.sdf')
+sdf_files = Chem.SDMolSupplier('BindingDB_herg_ic50.sdf')
 
 mols = [mol for mol in sdf_files]
 
