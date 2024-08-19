@@ -15,11 +15,7 @@ def isfloat(num):
     except ValueError:
         return False
 
-#When koreans were within the directory, Chem.SDMolSupplier cuased error.        
-wdir = r'/directory/of/your/work'
-sdf = 'ic50.sdf'
-
-sdf_files = Chem.SDMolSupplier(os.path.join(wdir, sdf))
+sdf_files = Chem.SDMolSupplier('BindingDB_herg_ic50.sdf')
 mols = [mol for mol in sdf_files]
 
 print (mols[0].GetPropsAsDict())
