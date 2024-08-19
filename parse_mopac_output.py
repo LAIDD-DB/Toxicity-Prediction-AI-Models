@@ -35,7 +35,7 @@ def qm_parsing(outfile):
 
     return qm_desc
     
-wdir = r'directory/of/the/csv/'
+wdir = '/content/Toxicity-Prediction-AI-Models/'
 csv = 'dilirank_mw_lessthan_1000.csv'
 df = pd.read_csv(os.path.join(wdir, csv))
 
